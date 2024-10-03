@@ -1,0 +1,256 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 20px;
+    background-image: url("2.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.button {
+    margin: 20px 0px 10px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #fff;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .button .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+  }
+  
+  .button svg path {
+    transition: 400ms;
+  }
+  
+  .button:hover {
+    background-color: rgb(16, 137, 211);;
+    color: #fff;
+  }
+  
+  .button:hover .text {
+    color: #007ACC;
+  }
+  
+  .button:hover svg path {
+    fill: #007ACC;
+  }
+
+
+/* Forms */
+form {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"], form input[type="password"], form input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(16, 137, 211);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+}
+
+form button:hover {
+    background-color: #fff;
+    color: rgb(16, 137, 211);;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+/* Post List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+li a {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #007bff;
+}
+
+.status {
+    font-size: 0.9em;
+    color: #999;
+}
+
+.status.published {
+    color: #28a745;
+}
+
+.status.draft {
+    color: #dc3545;
+}
+
+.view {
+    background-color: #999;
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+}
+/* Post Details */
+.post-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.post-content h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.post-content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Dashboard */
+.dashboard-header {
+    background-color: white;
+    color: rgb(16, 137, 211);;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+}
+
+.dashboard ul {
+    margin: 20px;
+}
+
+.dashboard li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.dashboard .actions .btn {
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+/* Create/Edit Post */
+.create-post, .edit-post {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.create-post h1, .edit-post h1 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+/* Login and Signup */
+.auth-form {
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.auth-form h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+.auth-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #999;
+}
