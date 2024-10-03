@@ -13,7 +13,7 @@
 1.Make sure you have all the above technologies mentioned in your local computer.
 2.Start XAMPP and place all the files of the project in the "blog-platform" named folder in 'htdocs' which is present in the XAMPP directory where it is installed or else create a folder inside it and place all the files in it.
 3.From XAMPP start MySQL on port 3306 and Apache on port 80. This will help you to start your MySQL server through PHPMYADMIN.
-4.Import the provided SQL file in your database. Just click on 'Admin' beside MySQL on XAMPP, which will take you to the PHPMYADMIN database configuration page. From there you can operate your database.
+4.Import the provided SQL file named "blog_plaform.sql" in your database. Just click on 'Admin' beside MySQL on XAMPP, which will take you to the PHPMYADMIN database configuration page. From there you can operate your database.
 5.Now you can start with the website. Open any browser and type 'http://localhost/blog-platform/index.php' to access public blog posts or if you want to sign up or login type 'http://localhost/blog-platform/views/signup.php'
 6.You can access the public blog posts as well as you can create your own blogs and post them for everyone to see.
 
