@@ -1,6 +1,9 @@
 # Use an official PHP runtime as a parent image
 FROM php:8.1-apache
 
+# Install PDO and MySQL driver
+RUN docker-php-ext-install pdo pdo_mysql
+
 # Set the working directory in the container
 WORKDIR /var/www/html
 
